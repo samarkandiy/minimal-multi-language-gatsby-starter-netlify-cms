@@ -53,7 +53,7 @@ const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElem
       <p>Locale: {locale}</p>
       <h2>{i18n[locale].text}</h2>
       <Link to={locale === 'en' ? '/de' : '/'}>
-        <p>Change language</p>
+        <p>{locale}</p>
       </Link>
       <h2>BlogPosts:</h2>
       {posts.map(
